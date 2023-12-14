@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ExpensesLogging">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="9" column-count="43" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="247" y="338" width="1460" height="312"/>
+    </constraints>
+    <properties>
+      <background color="-6571589"/>
+      <font size="28"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="61d79" layout-manager="GridLayoutManager" row-count="1" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="32" vsize-policy="3" hsize-policy="3" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6571589"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5b3b6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <foreground color="-16777216"/>
+              <text value="Date"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="8308f" class="javax.swing.JTextField" binding="tfDate">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-855041"/>
+              <foreground color="-16777216"/>
+              <text value="dd/mm/yyyy"/>
+            </properties>
+          </component>
+          <component id="bc078" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Amount"/>
+            </properties>
+          </component>
+          <component id="82feb" class="javax.swing.JTextField" binding="tfAmount">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-855041"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="9e3b0" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-16777216"/>
+              <text value="Category"/>
+            </properties>
+          </component>
+          <hspacer id="4d60d">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="3b7e" class="javax.swing.JComboBox" binding="cBCategory">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-855041"/>
+              <foreground color="-16777216"/>
+              <model>
+                <item value="Air Conditioner"/>
+                <item value="Almirah"/>
+                <item value="Bread"/>
+                <item value="Butter"/>
+                <item value="Cereal"/>
+                <item value="Cheese"/>
+                <item value="Cold Drink"/>
+                <item value="Cooking Oil"/>
+                <item value="Cooler"/>
+                <item value="Food"/>
+                <item value="Fruit"/>
+                <item value="Fridge"/>
+                <item value="Honey"/>
+                <item value="Juice"/>
+                <item value="Laptop"/>
+                <item value="Milk"/>
+                <item value="Mobile"/>
+                <item value="Salt"/>
+                <item value="Soap"/>
+                <item value="Television"/>
+                <item value="Toothpaste"/>
+                <item value="Vegetable"/>
+                <item value="Water"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="fabd2">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="43" vsize-policy="7" hsize-policy="7" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="dafed" class="javax.swing.JTable" binding="dataTable">
+            <constraints/>
+            <properties>
+              <font name="Lucida Sans Typewriter" size="12" style="0"/>
+              <foreground color="-16777216"/>
+              <gridColor color="-16777216"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="77ecd" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="23" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Brush Script MT" size="48" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Expense Logging"/>
+        </properties>
+      </component>
+      <component id="d8d0c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="          "/>
+        </properties>
+      </component>
+      <component id="ead23" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="41" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="          "/>
+        </properties>
+      </component>
+      <hspacer id="4f14f">
+        <constraints>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="1406d">
+        <constraints>
+          <grid row="1" column="35" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="80e3a" class="javax.swing.JButton" binding="setBudgetButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="23" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Set Budget"/>
+        </properties>
+      </component>
+      <component id="bfeed" class="javax.swing.JTextField" binding="tfTotalExpenses">
+        <constraints>
+          <grid row="6" column="19" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="7a2fc" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="15" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Brush Script MT" size="18" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Total Expense"/>
+        </properties>
+      </component>
+      <component id="96bb3" class="javax.swing.JButton" binding="addCategoryButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="19" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Add Category"/>
+        </properties>
+      </component>
+      <component id="7cae6" class="javax.swing.JTextField" binding="tfAddCategory">
+        <constraints>
+          <grid row="4" column="22" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-855041"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="70ad3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="19" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Brush Script MT" size="22" style="1"/>
+          <foreground color="-16777216"/>
+          <text value="Expenditure"/>
+        </properties>
+      </component>
+      <component id="b0ca2" class="javax.swing.JButton" binding="showBudgetButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="25" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Show Budget"/>
+        </properties>
+      </component>
+      <hspacer id="3ae90">
+        <constraints>
+          <grid row="0" column="30" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="a5ca7" class="javax.swing.JButton" binding="logOutButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="25" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Log out"/>
+        </properties>
+      </component>
+      <component id="d7cc5" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Delete"/>
+        </properties>
+      </component>
+      <component id="efada" class="javax.swing.JButton" binding="addButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="15" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Add"/>
+        </properties>
+      </component>
+      <component id="e6b6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="19" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-6571589"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="4a790" class="javax.swing.JButton" binding="graphButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="23" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4005148"/>
+          <font name="JetBrains Mono" size="12" style="0"/>
+          <foreground color="-16777216"/>
+          <text value="Graph"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
