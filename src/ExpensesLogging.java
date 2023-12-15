@@ -68,6 +68,7 @@ public class ExpensesLogging extends ExpensesTracker{
             // Handle connection errors
         }
         createTable();
+        //For the graph Button
         graphButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
