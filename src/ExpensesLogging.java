@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ExpensesLogging extends ExpensesTracker{
-    private String username;
     private JTextField tfDate;
     private JTextField tfAmount;
     private JButton addCategoryButton;
@@ -29,7 +28,8 @@ public class ExpensesLogging extends ExpensesTracker{
     private JButton setBudgetButton;
     private JButton showBudgetButton;
     private JButton graphButton;
-    private Map<String, Double> budgetMap = new HashMap<>();
+    final String username;
+    final Map<String, Double> budgetMap = new HashMap<>();
     private Connection con;
     void loadUserExpenses(String username) {
         try {
@@ -60,10 +60,9 @@ public class ExpensesLogging extends ExpensesTracker{
         return rootPanel;
     }
     public ExpensesLogging(String username) {
-        String loggedInUsername = "username";
         this.username = username;
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "password");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "Password");
         } catch (Exception e) {
             e.printStackTrace();
             // Handle connection errors
@@ -210,9 +209,11 @@ public class ExpensesLogging extends ExpensesTracker{
                 double budgetAmount = budgetMap.containsKey(category) ? budgetMap.get(category) : 0.0;
                 double totalCategoryExpenses = calculateTotalCategoryExpenses(category);
                 double budgetPoint = budgetAmount - totalCategoryExpenses - amount;
-                Object[] rowData = {uniqueID, date, amount, category, budgetPoint};
+                Object[] rowData = {uniqueID++, date, amount, category, budgetPoint};
                 if(budgetPoint < 0) {
-                    JOptionPane.showMessageDialog(rootPanel, "");
+                    JOptionPane.showMessageDialog(rootPanel, "You have exceeded your budget on  " + category + " !");
+                } else if(budgetPoint <= 100) {
+                    JOptionPane.showMessageDialog(rootPanel, "Please control your expenditure because you are about to exceed your budget on " + category + " !");
                 }
                 insertExpenseRecord(username, uniqueID, formattedDate, amount, category, budgetPoint);
                 // Add budget point to rowData
@@ -220,7 +221,6 @@ public class ExpensesLogging extends ExpensesTracker{
                 rowData[rowData.length - 1] = budgetPoint;
 
                 tableModel.addRow(rowData);
-                uniqueID++;
                 tfDate.setText("dd/mm/yyyy");
                 tfAmount.setText("");
                 // Calculate total expenses initially
@@ -354,7 +354,6 @@ public class ExpensesLogging extends ExpensesTracker{
                         }
                     } else {
                         JOptionPane.showMessageDialog(rootPanel, "Cannot change it", "Error", JOptionPane.ERROR_MESSAGE);
-                        return;
                     }
                 } else {
                         // For other columns, let the default behavior handle them

@@ -36,7 +36,7 @@ public class LoggingPage extends ExpensesTracker{
                 JOptionPane.showMessageDialog(rootPanel, "Enter valid username or password", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "password");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "Password");
 
                     // Check if username exists in the database
                     String checkQuery = "SELECT * FROM user WHERE username=?";
