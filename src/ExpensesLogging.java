@@ -12,11 +12,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ExpensesLogging extends ExpensesTracker{
+    private JPanel rootPanel;
     private JTextField tfDate;
     private JTextField tfAmount;
     private JButton addCategoryButton;
     private JTable dataTable;
-    private JPanel rootPanel;
     private JButton addButton;
     private JButton deleteButton;
     private DefaultTableModel tableModel;

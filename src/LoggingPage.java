@@ -17,7 +17,7 @@ public class LoggingPage extends ExpensesTracker{
         return rootPanel;
     }
     public LoggingPage() {
-        // Inside your ActionListener for the loginButton
+        // Inside your ActionListener for the login button
         signUpButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
