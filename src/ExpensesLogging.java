@@ -63,7 +63,7 @@ public class ExpensesLogging extends ExpensesTracker{
         String loggedInUsername = "username";
         this.username = username;
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "Zhong_1edoc");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "password");
         } catch (Exception e) {
             e.printStackTrace();
             // Handle connection errors
