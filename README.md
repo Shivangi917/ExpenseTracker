@@ -1,3 +1,22 @@
+Utilizing Java and MySQL, I developed a robust web application tailored to manage and analyze expenses efficiently. This comprehensive tool offers a spectrum of features, designed to meticulously track expenditures while providing insightful graphical representations.
+
+Key functionalities include:
+
+1. Expenditure Storage: Seamlessly store and organize expenditure data, ensuring a comprehensive overview of your spending habits.
+
+2. Graphical Analysis: Visual representations of expenditure patterns through intuitive graphs, enabling easy comprehension and analysis of spending behaviors.
+
+3. Budget Management: Empower users to set budgets, receiving proactive alerts when expenditures approach or surpass defined thresholds within specific categories.
+
+4. Category Customization: Flexibility to add, remove, and update expenditure categories, ensuring a tailored and personalized tracking experience.
+
+This professionally crafted application amalgamates Java's robustness, MySQL's data management capabilities, and a sleek user interface to deliver a streamlined and efficient expense tracking solution. It not only aids in monitoring expenses but also offers insightful tools to facilitate informed financial decisions.
+
+
+
+
+
+
 #Project-Screenshot
 
 ![Screenshot 2023-12-15 113257](https://github.com/Shivangi917/ExpenseTracker/assets/132935093/f2b294c8-3c52-4851-9466-c45aab4179cc)
