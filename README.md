@@ -1,4 +1,4 @@
-Utilizing Java and MySQL, I developed a robust web application tailored to manage and analyze expenses efficiently. This comprehensive tool offers a spectrum of features, designed to meticulously track expenditures while providing insightful graphical representations.
+Utilizing Java and MySQL, I developed a robust web application tailored to manage and analyze expenses efficiently. This project employs MySQL for efficient database management, storing essential user data such as usernames, passwords, expense records, and budget details. This ensures that even after a user logs out, upon logging back in, they can seamlessly access and view their data in its respective and accurate locations. This comprehensive tool offers a spectrum of features, designed to meticulously track expenditures while providing insightful graphical representations.
 
 Key functionalities include:
 
